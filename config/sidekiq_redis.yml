@@ -1,0 +1,17 @@
+defaults: &defaults
+  status: open
+  host: localhost
+  port: 6379
+  username: username
+
+  namespace: demo-sidekiq
+
+development: &development
+  <<: *defaults
+
+test:
+  <<: *development
+
+production:
+  <<: *development
+
