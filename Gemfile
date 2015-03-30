@@ -10,6 +10,9 @@ group :development do
   gem "rspec-rails"
 end
 
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
 
 # Gems used only for assets and not required
 # in production environments by default.
