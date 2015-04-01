@@ -28,6 +28,7 @@ end
 
 gem 'jquery-rails'
 gem 'sidekiq'
+gem 'strong_parameters'
 
 gem 'settingslogic'
 
