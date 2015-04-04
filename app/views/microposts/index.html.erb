@@ -20,6 +20,13 @@
 <% end %>
 </table>
 
+<br>
+
+Following is caching:
+<br>
+<% cache do %>
+  Total user: <%= User.all %>
+<% end %>
 <br />
 
 <%= link_to 'New Micropost', new_micropost_path %>
