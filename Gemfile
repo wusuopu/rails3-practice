@@ -5,9 +5,18 @@ gem 'rails', '3.2.17'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
   gem "rspec-rails"
+  gem "factory_girl_rails"
+end
+
+group :test do
+  gem "faker"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "capybara"
+  gem "selenium-webdriver"
 end
 
 gem 'devise'
@@ -30,6 +39,7 @@ gem 'jquery-rails'
 gem 'sidekiq'
 gem 'strong_parameters'
 gem 'redis-rails'
+gem 'slim-rails'
 
 gem 'settingslogic'
 
