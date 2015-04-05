@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Contact:
+  = @phone.contact_id
+p
+  strong Phone:
+  = @phone.phone
+p
+  strong Phone type:
+  = @phone.phone_type
+
+= link_to 'Edit', edit_phone_path(@phone)
+'|
+= link_to 'Back', phones_path
