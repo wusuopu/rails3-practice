@@ -9,6 +9,8 @@ group :development, :test do
   gem 'sqlite3'
   gem "rspec-rails"
   gem "factory_girl_rails"
+  gem "better_errors"
+  gem 'execjs'
 end
 
 group :test do
@@ -17,6 +19,8 @@ group :test do
   gem "launchy"
   gem "capybara"
   gem "selenium-webdriver"
+  # https://github.com/thoughtbot/shoulda-matchers
+  gem 'shoulda-matchers'
 end
 
 gem 'devise'

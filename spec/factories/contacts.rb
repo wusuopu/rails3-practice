@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :contact do
-    firstname "MyString"
-lastname "MyString"
-email "MyString"
+    firstname "Aaron"
+    lastname "Summer"
+    email "tester@example.com"
   end
 
 end
