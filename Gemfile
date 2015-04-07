@@ -61,3 +61,13 @@ gem 'settingslogic'
 
 # To use debugger
 # gem 'debugger'
+
+group :development, :test do
+  # 导出UML
+  gem 'railroady'
+end
+
+# 实现软删除
+gem "acts_as_paranoid", "~>0.4.0"
+
+gem "redis-namespace", "~> 1.4.1"
