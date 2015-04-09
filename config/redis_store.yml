@@ -1,0 +1,16 @@
+defaults: &defaults
+  host: localhost
+  db: 0
+  port: 6379
+  namespace: cache
+  expires_in: 90.minutes
+
+development: &development
+  <<: *defaults
+
+test:
+  <<: *development
+
+production:
+  <<: *development
+
