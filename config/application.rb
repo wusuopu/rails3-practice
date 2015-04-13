@@ -59,6 +59,8 @@ module FirstApp
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    config.cache_store = :redis_store, YAML.load_file("#{Rails.root.to_path}/config/redis_store.yml")[Rails.env] if File.exists?("#{Rails.root.to_path}/config/redis_store.yml")
+
     config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,
