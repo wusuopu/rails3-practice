@@ -71,3 +71,6 @@ end
 gem "acts_as_paranoid", "~>0.4.0"
 
 gem "redis-namespace", "~> 1.4.1"
+
+# 服务监控
+gem 'newrelic_rpm'
